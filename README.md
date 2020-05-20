@@ -1,16 +1,18 @@
 # CignaProjectApp
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
 
-## NOTE FOR UPDATE TO ANGULAR9!! 
-## IF ERROR OCCURS:
+## NOTE FOR ANGULAR9 IF ERROR(or similar) OCCURS:
     ERROR in node_modules/@angular/common/http/http.d.ts:81:22 - error NG6002: Appears in the NgModule.imports of AppModule, but could not be resolved to an NgModule class.
 
     This likely means that the library (@angular/common/http) which declares HttpClient has not been processed correctly by ngcc, or is not compatible with Angular Ivy. Check if a newer version of the library is available, and update if so. Also consider checking with the library's authors to see if the library is expected to be compatible with Ivy.
 
     81 export declare class HttpClient {
-
-## ADD FOLLOWING TO tsconfig##
+    
+## ADD FOLLOWING AS POTENTIAL FIX TO tsconfig.json within "angularCompilerOptions"-
 >> "enableIvy": false
+
+## SET UP TO RUN APP
+Clone repo to local and run `npm i @angular/material`
 
 ## Development server
 
