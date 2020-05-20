@@ -1,4 +1,9 @@
 # CignaProjectApp
+------
+![Cigna Project](img/full-list.png?raw=true "Full List")
+------
+![Cigna Project - Filtered](img/filtered-list.png?raw=true "Filtered List")
+------
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
 
 ## NOTE FOR ANGULAR9 IF ERROR(or similar) OCCURS:
