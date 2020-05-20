@@ -1,0 +1,10 @@
+
+tr:nth-child(n) { 
+    background-color: rgba(198, 196, 196, 0.667);
+  }
+tr:nth-child(odd) { 
+    background-color: rgba(162, 160, 160, 0.673);
+  }
+th{
+    padding: .5em;
+}

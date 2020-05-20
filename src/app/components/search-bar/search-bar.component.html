@@ -1,1 +1,7 @@
-<input type="text" placeholder="Search Doctors...">
+<div id="search-bar-container">
+    <p id="title">Search list of famous Doctors:</p>
+    <input matInput class="searching-customer" type="text"  
+    placeholder="Search" [ngModel]="searchModel" 
+    (ngModelChange)="updateSearchModel($event)">
+</div>
+
