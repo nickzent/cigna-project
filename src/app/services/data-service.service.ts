@@ -16,9 +16,6 @@ export class DataServiceService {
   getData(): Observable<any[]> {
     return this.httpClient.get<Doctors[]>(this.json);
   }
-<<<<<<< HEAD
   
-=======
->>>>>>> e5d8f52cc39e8a7ad0cc856448df45e4d6a592cc
 
 }
