@@ -1,19 +1,17 @@
+<!-- this is the text box to search the data table -->
+<app-search-bar [(searchModel)]="searchModel"></app-search-bar>
 <div>
-    <table>
+    <table id="data-table">
        <thead>
           <tr>
-             <th>Name</th>
-             <th>Specialty</th>
+             <th id="name-header">Name</th>
+             <th id="spec-header">Specialty</th>
           </tr>
        </thead>
        <tbody>
-          <tr *ngFor="let item of ItemsArray['results']">
-             <th>{{ item.name }}</th>
-             <td>{{ item.specialty }}</td>
-             <td>
-                <button type="button" >Edit</button>
-                <button type="button" >Delete</button>
-             </td>
+          <tr id="data-line-items" *ngFor="let item of ItemsArray['results'] | listFilter: searchModel">
+             <th id="name-cell">{{ item.name }}</th>
+             <td id="spec-cell">{{ item.specialty }}</td>
           </tr>
        </tbody>
     </table>
